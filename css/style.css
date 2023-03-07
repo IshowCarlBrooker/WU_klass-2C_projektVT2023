@@ -32,7 +32,7 @@ header {
     display: flex;
     justify-content: center;
     align-items: center;
-    filter: grayscale(70%);
+    filter: grayscale(100%);
 }
 
 .logo {
@@ -50,6 +50,7 @@ header {
     display: flex;
     justify-content: center;
     align-items: center;
+    flex-direction: row;
 }
 
 .navbar ul li {
@@ -108,6 +109,9 @@ a:hover::after{
     background-color: rgba(59, 55, 55, 0.7);
     flex-direction: column;
     align-items: center;
+    text-align: center;
+   
+
 
     
 }
@@ -115,7 +119,7 @@ a:hover::after{
 #square_with_text h2{
     color: rgb(216, 208, 208);
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-    font-size: 4vh;
+    font-size: 40px;
     text-transform: uppercase;
     margin-top: 15%;
 
@@ -178,4 +182,23 @@ footer{
     justify-content: center;
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     
+}
+
+#grid_wrapper2{
+    display: grid;
+    grid-template-columns: 100%;
+    grid-template-rows: 20vh 80vh 90vh 40vh ;
+    grid-template-areas: 
+    "he"
+    "s1"
+    "s2"
+    "fo";
+}
+
+#meny_overdel{
+    grid-area: s1;
+}
+
+#meny_underdel{
+    grid-area: s2;
 }
